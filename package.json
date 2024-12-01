@@ -1,0 +1,37 @@
+{
+  "name": "nextjs-wagmi-template",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.0.5",
+    "autoprefixer": "^10.4.20",
+    "next": "14.2.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "viem": "2.6.1",
+    "wagmi": "2.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@wagmi/cli": "2.1.0",
+    "bufferutil": "^4.0.7",
+    "encoding": "^0.1.13",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "lokijs": "^1.5.12",
+    "pino-pretty": "^10.2.0",
+    "postcss": "^8",
+    "supports-color": "^9.4.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "utf-8-validate": "^6.0.3"
+  }
+}
