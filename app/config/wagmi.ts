@@ -1,15 +1,10 @@
 import { http, createConfig } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
-import { coinbaseWallet, injected } from 'wagmi/connectors';
-
-const connectors =
-  typeof window !== 'undefined'
-    ? [injected(), coinbaseWallet({ appName: 'Create Wagmi' })]
-    : [];
+import { coinbaseWallet } from 'wagmi/connectors';
 
 export const config = createConfig({
   chains: [mainnet, sepolia],
-  connectors,
+  connectors: [coinbaseWallet({ appName: 'Create Wagmi' })],
   ssr: true,
   transports: {
     [mainnet.id]: http(),
